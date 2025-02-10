@@ -1,10 +1,7 @@
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
     updateHeading();
-};
-
-window.onresize = function () {
-    updateHeading();
-};
+    window.addEventListener("resize", updateHeading);
+});
 
 function updateHeading() {
     let mainElement = document.querySelector("#mainintro");
